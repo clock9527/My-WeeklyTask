@@ -19,7 +19,7 @@
 [任务1](https://github.com/clock9527/My-WeeklyTask/blob/main/task1.go)
 
 
-## 4、任务2
-[共识机制基础作业题.md](https://github.com/clock9527/My-WeeklyTask/blob/main/02.%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6%E5%9F%BA%E7%A1%80%E4%BD%9C%E4%B8%9A%E9%A2%98.md)
+## 5、任务2
+[任务2](https://github.com/clock9527/My-WeeklyTask/blob/main/task2.go)
 
 
