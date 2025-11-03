@@ -23,7 +23,7 @@
 [任务2](https://github.com/clock9527/My-WeeklyTask/blob/main/first/task2.go)
 
 ### 3、任务3
-[任务3](https://github.com/clock9527/My-WeeklyTask/blob/main/first/task2.go)
+[任务3](https://github.com/clock9527/My-WeeklyTask/tree/main/first/task3)
 
 ### 4、任务4
 [任务4](https://github.com/clock9527/My-WeeklyTask/blob/main/first/task2.go)
