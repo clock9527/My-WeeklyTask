@@ -21,4 +21,9 @@
 ### [任务3](https://github.com/clock9527/My-WeeklyTask/tree/main/first/task3)
 ### [任务4](https://github.com/clock9527/My-WeeklyTask/blob/main/first/task2.go)
 
+## 五、基础2 任务：
+### [任务1](https://github.com/clock9527/My-WeeklyTask/blob/main/second/Voting.sol)
+### [任务2-ERC20](https://github.com/clock9527/My-WeeklyTask/blob/main/second/MyERC20.sol)
+### [任务2-NFT](https://github.com/clock9527/My-WeeklyTask/blob/main/second/WNFT.sol)
+
 
