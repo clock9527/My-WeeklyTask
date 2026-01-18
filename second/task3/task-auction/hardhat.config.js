@@ -1,0 +1,24 @@
+require("@nomicfoundation/hardhat-toolbox");
+require("hardhat-deploy");
+require("@openzeppelin/hardhat-upgrades");
+require("dotenv").config();
+
+/** @type import('hardhat/config').HardhatUserConfig */
+module.exports = {
+  solidity: "0.8.28",
+  networks: {
+    sepolia: {
+      url: `https://sepolia.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      accounts: [process.env.PK]
+    },
+    mainnet: {
+      url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      accounts: [process.env.PK]
+    }
+  },
+  namedAccounts: {
+    deployer: 0,
+    account1: 1,
+    account2: 2
+  },
+};
