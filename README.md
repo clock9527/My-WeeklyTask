@@ -25,5 +25,6 @@
 ### [任务1](https://github.com/clock9527/My-WeeklyTask/blob/main/second/Voting.sol)
 ### [任务2-ERC20](https://github.com/clock9527/My-WeeklyTask/blob/main/second/MyERC20.sol)
 ### [任务2-NFT](https://github.com/clock9527/My-WeeklyTask/blob/main/second/WNFT.sol)
+### [任务3-NFT拍卖-hardhatv2](https://github.com/clock9527/My-WeeklyTask/tree/main/second/task3/task-auction)
 
 
