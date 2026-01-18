@@ -67,7 +67,8 @@ contract NftAuction is Initializable, UUPSUpgradeable {
         require(_duration >= 10, "Duration must be greater than 10s.");
         require(_startPrice > 0, "Start price must be greater than 0.");
 
-        IERC721(_nftAddr).approve(msg.sender, _tokenID); // 将token授权给拍卖方
+        // IERC721(_nftAddr).approve(msg.sender, _tokenID); // 将token授权给拍卖方
+        IERC721(_nftAddr).safeTransferFrom(msg.sender, address(this), _tokenID);
         auction.seller = msg.sender;
         auction.startTime = block.timestamp;
         auction.duration = _duration;
@@ -145,17 +146,18 @@ contract NftAuction is Initializable, UUPSUpgradeable {
 
         // 转移NFT到最高价者
         IERC721(auction.nftAddr).safeTransferFrom(
-            admin,
+            address(this),
             auction.highestBidder,
             auction.tokenID
         );
 
         // 转移剩余的资金到卖家
         // payable(address(this)).transfer(address(this).balance);
-        (bool buss, ) = payable(address(this)).call{
-            value: address(this).balance
-        }("");
-        if (buss) auction.ended = true;
+        // (bool buss, ) = payable(address(this)).call{
+        //     value: address(this).balance
+        // }("");
+        // if (buss)
+        auction.ended = true;
     }
 
     //
@@ -164,5 +166,14 @@ contract NftAuction is Initializable, UUPSUpgradeable {
     ) internal view override {
         // 只有管理员可以升级合约
         require(msg.sender == admin, "Only admin can upgrade");
+    }
+
+    function onERC721Received(
+        address operator,
+        address from,
+        uint256 tokenId,
+        bytes calldata data
+    ) external pure returns (bytes4) {
+        return this.onERC721Received.selector;
     }
 }
