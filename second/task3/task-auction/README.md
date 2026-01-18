@@ -14,3 +14,17 @@ npx hardhat ignition deploy ./ignition/modules/Lock.js
 代理合约地址： 0x0E8C19C974D40b987B89aABDf811d5F31781Cd7C
 
 逻辑合约地址： 0xa31F0eCdeD6FdF1126b071d02f547462F8B0cc27
+
+项目结构：
+task-auction/
+├── contracts/
+│   ├── NftAuction.sol         # 拍卖合约
+│   └── test/TestERC721.sol    # NTF合约
+├── deploy/
+|   ├── 00_deploy_nft_auction.js  # 部署脚本
+├── test/
+│   └── NftAuction.js  # 测试文件
+├── .env                      # Infura key
+├── hardhat.config.js         # 配置
+├── package.json              # 依赖
+└── README.md                 # 说明
