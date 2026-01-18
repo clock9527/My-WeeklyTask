@@ -54,7 +54,7 @@ task-auction/
 │   ├── NftAuction.sol         # 拍卖合约  
 │   └── test/TestERC721.sol    # NTF合约  
 ├── deploy/  
-|   ├── 00_deploy_nft_auction.js  # 部署脚本  
+│   ├── 00_deploy_nft_auction.js  # 部署脚本  
 ├── test/  
 │   └── NftAuction.js  # 测试文件  
 ├── .env                      # Infura key  
